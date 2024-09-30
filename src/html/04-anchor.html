@@ -10,24 +10,41 @@
     <a id="start"></a>
     <h1>하이퍼링크 요소</h1>
     <!-- 웹사이트(URL)로 하이퍼링크 -->
-    <a href="https://likelion.net/school">태킷 프론트엔드 스쿨(부트캠프)</a>
-    <br />
+    <p>
+      <a href="https://likelion.net/school">태킷 프론트엔드 스쿨(부트캠프)</a>
+    </p>
     <!-- target 속성의 값으로 _blank를 지정하면 새창, 새탭에 링크 결과 보기 -->
-    <a href="https://github.com/photoby64" target="_blank">윤경님의 Github</a>
-    <br />
-    <a href="https://www.naver.com/" target="blank" title="네이버로 이동합니다."
-      >네이버</a
+    <!-- target 속성의 값으로 _blank를 설정되어 있을 경우 rel 속성의 값으로 noopener noreferrer를 지정해야 함.-->
+    <a href="https://github.com/photoby64" target="_blank"
+      ><p>윤경님의 Github</p></a
     >
-    <br />
-    <a href="https://www.daum.net/" target="blank" title="다음으로 이동합니다."
-      >다음</a
-    >
-    <br />
-    <!-- 이미지 링크 -->
-    <a href="https://likelion.net/school"
-      ><img src="./../assets/icon/plus-on.svg" alt="태킷 스쿨 더보기"
-    /></a>
-    <br />
+    <p>
+      <a href="https://github.com/photoby64/homework">과제 저장소 - <a href="https://github.com/photoby64/homework/blob/main/about-me.md">자기소개</a
+      ></a></p>
+      <br />
+      <a
+        href="https://www.naver.com/"
+        target="blank"
+        title="네이버로 이동합니다."
+        rel="noopener noreferrer"
+        >네이버</a
+      >
+      <br />
+      <a
+        href="https://www.daum.net/"
+        target="blank"
+        title="다음으로 이동합니다."
+        rel="noopener noreferrer"
+        >다음</a
+      >
+      <br />
+      <!-- 이미지 링크 -->
+      <a href="https://likelion.net/school"
+        ><img src="./../assets/icon/plus-on.svg" alt="태킷 스쿨 더보기"
+      /></a>
+      <br />
+    </p>
+
     <hr />
     <!-- 로컬 파일로 하이퍼링크: 상대경로 -->
     <!-- Github 페이지의 경우 로컬 형식의 절대경로를 지원하지 않음. -->
