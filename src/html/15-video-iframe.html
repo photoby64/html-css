@@ -9,7 +9,7 @@
     <h1>비디오 포함하기</h1>
     <figure>
       <!-- autoplay 속성은 muted 속성을 함께 제공할 경우에만 동작 -->
-      <video class="fullsize" poster="../assets/video/poster.jpg" controls autoplay muthed>
+      <video class="fullsize" poster="../assets/video/poster.jpg" controls autoplay>
         <source src="../assets/video/google-developer-stories.mp4" type="video/mp4" />
         <source src="../assets/video/google-developer-stories.mov" type="video/mov" />
         <source src="../assets/video/google-developer-stories.ogg" type="video/ogg" />
@@ -19,6 +19,7 @@
       <figcaption>구글 개발자 이야기</figcaption>
     </figure>
     <hr />
+    <!-- muthed는 동영상 강제 플레이 -->
     <video src="./../assets/video/google-developer-stories.mp4" class="fullsize" poster="../assets/video/poster.jpg" controls autoplay muthed>
       <track src="../assets/video/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption" />
     </video>
