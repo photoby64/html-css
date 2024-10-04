@@ -2,8 +2,19 @@
 * {
   color: #ff0000;
 }
+/*전체 선택자 : 바디 안에 있는 요소만 */
+body * {
+  color: violet;
+}
 
 /* 요소 선택자 (태그 이름) */
+
+/* 모든 글자 크기 변경 
+기본 폰트사이즈는 16px
+0.625em은 16*0.625 10px */
+html {
+  font-size: 0.625em;
+}
 /* cacsade 위에 전체 요소와 겹침 */
 p {
   color: blue;
@@ -22,4 +33,72 @@ p {
 /* 속성 선택자(title) '[]' 필수!!! */
 [title] {
   color: pink;
+}
+/* 자손 결합 선택자 */
+p span {
+  color: skyblue;
+}
+
+/* 자식 선택자 */
+p > span {
+  text-decoration: underline;
+}
+
+/* 가상 요소*/
+h1::before {
+  content: "첫번째 자식 요소";
+}
+h1::after {
+  content: "마지막 자식 요소";
+}
+/* 맨 앞글자 3em 사이즈로 변경 */
+p::first-letter {
+  font-size: 3.5rem;
+}
+
+/* 셀렉션 앞에 별(전체) 생략이고 드리그하면 색이 바뀜 */
+::selection {
+  background-color: darkblue;
+  color: white;
+}
+
+/* 가상 클래스 
+html 폰트 사이즈와 결과가 같음 */
+:root {
+  font-size: 0.75em;
+}
+
+/* 선택자 그룹화 */
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  background-color: yellow;
+  color: black;
+}
+
+/* 가상 클래스를 이용한 선택자 그룹화 is */
+:is(h1, h2, h3, h4, h5, h6) span {
+  background-color: salmon;
+  color: blue;
+}
+
+/* 가상 클래스를 이용한 선택자 그룹화 where*/
+:where(h1, h2, h3, h4, h5, h6) span {
+  background-color: lightgreen;
+  color: red;
+}
+
+/*  */
+h6:has(+ p) {
+  border: solid 1px green;
+  padding: 10px;
+}
+/*  */
+p:has(strong) {
+  border: solid 1px red;
+  padding: 10px;
 }
