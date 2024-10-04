@@ -1,0 +1,25 @@
+/* 전체 선택자 모두 선택하는 방식 */
+* {
+  color: #ff0000;
+}
+
+/* 요소 선택자 (태그 이름) */
+/* cacsade 위에 전체 요소와 겹침 */
+p {
+  color: blue;
+}
+
+/* class 선택자 '.' 필수!! */
+.likelion {
+  color: green;
+}
+
+/* id 선택자 '#' 필수!! */
+#techit {
+  color: orange;
+}
+
+/* 속성 선택자(title) '[]' 필수!!! */
+[title] {
+  color: pink;
+}
