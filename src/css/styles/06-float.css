@@ -1,0 +1,43 @@
+.container div {
+  /* width: 100px;
+  inline-size: 100px; */
+  height: 100px;
+  block-size: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.container {
+  border: 10px solid currentColor;
+  /* flow-root를 쓰면 부모가 박스 4까지 모두 포함함  */
+  display: flow-root;
+
+  /* bfc 트릭을 가져다 쓴 것 */
+  /* overflow: hidden; */
+}
+div.box1 {
+  background-color: sandybrown;
+  float: left;
+  width: 100px;
+  inline-size: 100px;
+}
+div.box2 {
+  background-color: skyblue;
+  height: auto;
+  block-size: auto;
+  line-height: 1;
+  text-align: left;
+}
+div.box3 {
+  background-color: lightgreen;
+  clear: both;
+  margin-top: 20px;
+  margin-block-start: 20px;
+  width: 200px;
+  inline-size: 200px;
+  float: right;
+}
+div.box4 {
+  background-color: yellow;
+  width: 300px;
+  inline-size: 300px;
+}
