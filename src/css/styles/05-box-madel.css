@@ -1,0 +1,73 @@
+/* 요소별 배경색상 */
+span {
+  background-color: pink;
+}
+div {
+  background-color: yellow;
+}
+
+/* 시블리스 컬렉터? 플러스는 형제 구조 두개의 div 중에 뒤에 div 선택*/
+div + div {
+  background-color: lightgreen;
+}
+
+/* 인라인 상자 - 크기 지정 */
+/* 인라인 상자는 임의로 가로세로 크기를 지정할 수 없음 */
+span {
+  width: 200px;
+  inline-size: 200px; /* px는 절대 단위!*/
+  height: 200px;
+  block-size: 200px;
+}
+/* 블록상자 - 크기 */
+/* 박스모델 관련 속성 */
+.likelion {
+  width: 800px;
+  inline-size: 800px;
+  border: 10px solid currentColor; /* 숏텐드 방식*/
+  padding: 50px; /* 숏텐드 방식, 안쪽여백 */
+  /* 숏텐드 방식, 위아래-좌우(오토, 부모의 영역만큼 컨텐츠 크기를 뺀 나머지 수치 만큼 적용) 오토는 패딩엔 못쓰고 마진만 쓸수 있음 */
+  /* margin: 0 auto;  */
+
+  /* 오토 기워드를 활용하여 절렬 스타일링 */
+  margin-left: auto;
+  margin-inline-start: auto;
+}
+/* margin 속성 */
+.techit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-block: 10px;
+  /* 마진 병합 현상으로 40px 아니라 20px */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-block: 20px;
+}
+/* 마진 속성은 음수 값을 가질 수있다 패딩은 안됨 */
+.school {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-block: -20px;
+  margin
+}
+
+.negative{
+  background-color: orange;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-block: -10px;
+}
+
+section{
+  border: 1px solid currentColor;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-block: 50px;
+}
+
+/* 인라인 방향의 여백(Margin) */
+span{
+  margin-left: 20px;
+  margin-right: 20px;
+  ma
+
