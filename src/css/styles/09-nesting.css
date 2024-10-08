@@ -1,0 +1,25 @@
+@import "./../../common/normalize.css";
+
+.member {
+  background-color: yellow;
+
+  .member__list {
+    list-style: "";
+  }
+
+  & .likelion_item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-block-start: 10px;
+  }
+
+  .member__link {
+    text-decoration: none;
+    color: #121212;
+
+    &:hover,
+    &:focus {
+      border: 1px solid red;
+    }
+  }
+}
