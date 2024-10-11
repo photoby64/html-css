@@ -1,0 +1,48 @@
+@import "./../../common/base.css";
+@import "./../../common/a11y.css";
+
+body {
+  margin: 50px;
+}
+
+.brand {
+  background-color: yellow;
+  margin: 0;
+  font-size: 1em;
+}
+
+.button--icon-circle {
+  all: unset;
+}
+
+.search {
+  --placeholder-text-color: #ccc;
+  --text-color: #1212;
+
+  .search__input {
+    border: 1px solid red;
+    inline-size: 100%;
+    block-size: 1.25em;
+    padding: 0.125rem 0.5rem;
+
+    &::placeholder {
+      /* color: red; */
+    }
+  }
+}
+
+.search-bar {
+  --green: #03cc5c;
+  --border-color: var(--green);
+
+  border: 1px solid --border-color;
+  border-radius: 50px;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  .search-form {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
