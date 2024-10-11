@@ -26,6 +26,16 @@
 .unit-vw {
   font-size: 3vw;
 }
+
+/*  */
+.unit-number {
+  font-size: 10px;
+  line-height: 1;
+  p {
+    font-size: 20px;
+  }
+}
+
 /* 색상값 */
 
 .unit-color-name {
