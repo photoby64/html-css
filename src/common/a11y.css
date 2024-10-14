@@ -9,3 +9,16 @@
   overflow: hidden; /* 넘치는 콘텐츠 숨김 */
   white-space: nowrap; /* 줄 바꿈 방지 */
 }
+
+/* 포커스 스타일링 */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  box-shadow: 0 0 2px 2px #03cc5c;
+  border-radius: 4px;
+}
+input:focus-visible {
+  box-shadow: none;
+}

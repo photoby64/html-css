@@ -26,7 +26,9 @@ select {
 
 /* 검색 버튼 컴포넌트 */
 .button--icon-circle {
-  all: unset;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
 
   svg {
     display: block;
@@ -64,18 +66,18 @@ select {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 12px; /* 이중으로 갭을 준 이유는??????? */
+  gap: 48px;
+
+  &:focus-within {
+    box-shadow: 0px 4px 4px 0px rgba(68, 131, 63, 0.5);
+  }
 
   .brand {
     flex: 0 0 auto;
   }
 
   .search-form {
-    display: flex;
-    flex-flow: row nowrap;
-    flex: 1;
-    align-items: center;
-    gap: 16px;
+    display: contents;
 
     .search {
       flex: 1;
