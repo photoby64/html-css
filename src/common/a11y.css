@@ -1,24 +1,26 @@
-.sr-only {
-  position: absolute; /* 요소를 화면 밖으로 이동시킴 */
-  width: 1px; /* 너비를 1px로 설정 */
-  height: 1px; /* 높이를 1px로 설정 */
-  margin: -1px; /* 마진을 음수로 설정하여 위치를 화면 밖으로 이동 */
-  padding: 0; /* 패딩 없음 */
-  border: 0; /* 경계 없음 */
-  clip: rect(0, 0, 0, 0); /* 보이지 않도록 잘라냄 */
-  overflow: hidden; /* 넘치는 콘텐츠 숨김 */
-  white-space: nowrap; /* 줄 바꿈 방지 */
-}
-
 /* 포커스 스타일링 */
 :focus {
   outline: none;
 }
 
 :focus-visible {
-  box-shadow: 0 0 2px 2px red;
+  box-shadow: 0 0 2px 2px rgb(224, 86, 86, 0.85);
   border-radius: 4px;
 }
+
 input:focus-visible {
   box-shadow: none;
+}
+
+/* 숨김 콘텐츠 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
