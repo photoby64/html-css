@@ -6,12 +6,12 @@ h1 {
 }
 .card {
   border: 1px solid gray;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 1rem;
 
-  pigcaption {
+  figcaption {
     display: contents;
   }
 
@@ -21,14 +21,14 @@ h1 {
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
   }
-}
 
-img {
-  aspect-ratio: 1 / 0.6671875;
-  object-fit: cover;
-  object-position: 50% 30%;
+  img {
+    aspect-ratio: 1 / 0.6671875;
+    object-fit: cover;
+    object-position: 50% 30%;
+  }
 }
 
 .card-wrapper {
