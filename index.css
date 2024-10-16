@@ -1,0 +1,6 @@
+@import "./../../common/mordern-reset.css";
+@import "./../../common/base.css";
+
+body {
+  background-color: lightslategray;
+}
