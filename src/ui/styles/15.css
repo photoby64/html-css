@@ -1,0 +1,49 @@
+@import "./../../common/modern-reset.css";
+@import "./../../common/base.css";
+
+.tab-container {
+  margin-block: 1rem;
+  inline-size: 380px;
+  font-size: 0.875rem;
+
+  .tab-list {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 1rem;
+  }
+}
+
+.tab {
+  background-color: var(--white);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: #ed552f;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #ed552f;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-panel {
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.75rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  span {
+    color: var(--black);
+    margin-right: 0.25rem;
+  }
+}
+
+.fa-plus {
+  color: #447231;
+}
