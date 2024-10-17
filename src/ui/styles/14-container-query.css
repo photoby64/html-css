@@ -1,6 +1,13 @@
 @import "./../../common/modern-reset.css";
 @import "./../../common/base.css";
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--white);
+    background-color: var(--black);
+  }
+}
+
 h1,
 p {
   line-height: 1.5;
@@ -24,7 +31,6 @@ p:not(.card__description) {
   display: grid;
   grid-template: "image" "description" / minmax(260px, 1fr);
   border: 1px solid var(--gray);
-  background-color: var(--light-silver);
   padding: 1rem;
   gap: 1rem;
 
@@ -64,14 +70,12 @@ p:not(.card__description) {
 
 /* 카드 레이아웃 */
 .cards {
-  background-color: yellow;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
 }
 
 .card-floating {
-  background-color: yellow;
   display: flow-root;
 
   .card-wrapper {
